@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MOTTA｜食品ロスを減らそう</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f6f8f4;color:#26352b;font-family:-apple-system,BlinkMacSystemFont,sans-serif}
+header{background:#29834b;color:white;padding:22px 18px;text-align:center}
+h1{margin:0;font-size:34px;letter-spacing:2px}
+header p{margin:6px 0 0;font-size:13px}
+main{max-width:600px;margin:auto;padding:18px}
+.hero{background:#e3f3df;padding:22px;border-radius:16px;text-align:center}
+.hero h2{font-size:21px;margin:0 0 8px}
+.hero p{font-size:14px;line-height:1.7}
+button{border:0;background:#29834b;color:white;padding:13px 20px;border-radius:12px;font-size:15px;font-weight:bold;cursor:pointer}
+.card{background:white;border-radius:14px;padding:16px;margin-top:14px;box-shadow:0 2px 8px #0000000b}
+.card h3{margin:0 0 8px}
+.price{color:#d34b32;font-weight:bold;font-size:22px}
+small{color:#68786b}
+nav{display:flex;justify-content:space-around;background:white;padding:15px;position:sticky;bottom:0;border-top:1px solid #ddd}
+nav a{color:#29834b;text-decoration:none;font-weight:bold}
+</style>
+</head>
+<body>
+<header><h1>MOTTA</h1><p>もったいないを、おいしいに。</p></header>
+<main>
+<section class="hero">
+<h2>近くのお得な食品を探そう！</h2>
+<p>まだ食べられる食品をお得に購入。<br>お店で受け取って、お店でお支払い。</p>
+<button onclick="document.getElementById('items').scrollIntoView()">商品を見る</button>
+</section>
+<h2 id="items">本日のおすすめ</h2>
+<div class="card">
+<h3>🥐 パンのお楽しみセット</h3>
+<p>サンプルベーカリー</p>
+<p><small>受け取り 17:00〜19:00</small></p>
+<p class="price">500円 <small>通常価格 1,000円</small></p>
+<button onclick="alert('これは試作品です。予約機能は次の開発で追加します。')">予約する</button>
+</div>
+<div class="card">
+<h3>🍱 お弁当おまかせセット</h3>
+<p>サンプル食堂</p>
+<p><small>受け取り 19:00〜20:00</small></p>
+<p class="price">350円 <small>通常価格 700円</small></p>
+<button onclick="alert('これは試作品です。予約機能は次の開発で追加します。')">予約する</button>
+</div>
+</main>
+<nav><a href="#items">商品を探す</a><a href="#" onclick="alert('会員登録は次の開発で追加します。')">マイページ</a></nav>
+</body>
+</html>
